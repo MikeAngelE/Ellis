@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{partial "blog/head.html" . }}
+
+    <body>
+         {{ partial "topbar.html" . }}
+        <!--navigation -->
+        <!-- Static navbar -->
+        {{partial "blog/header.html" . }}
+
+        {{partial "blog/heading.html" . }}
+
+        <div class="divide80"></div>
+        <div class="container">
+            <div class="row">   
+                <div class="col-md-9">
+                    <div class="row">                       
+                          <div class="col-md-12">
+                            <div class="blog-wrap">
+                                {{partial "blog/picture.html" . }}
+
+                                <div class="divide30"></div>
+                                {{partial "blog/description.html" . }}
+
+                            </div><!--blog wrap-->
+                             {{partial "blog/description2.html" . }}
+
+                             
+                            {{partial "blog/bottomnav.html" . }}
+
+                        </div>
+                    </div><!--row-->
+                </div>
+                <div class="col-md-3">
+                    {{partial "blog/search.html" . }}
+
+                    {{partial "blog/text-widget.html" . }}
+
+                    {{partial "blog/sidebar.html" . }}
+             
+                </div>
+            </div>
+        </div><!--blog container-->
+        <div class="divide80"></div>
+        {{partial "footer.html" . }}
+        {{partial "blog/scripts.html" . }}
+
+
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{ partial "head.html" . }}
+    <body>
+        {{ partial "topbar.html" . }}
+        <!--navigation -->
+        <!-- Static navbar -->
+        {{ partial "header.html" . }}
+
+        {{ partial "main-slider.html" . }}
+        <div class="divide40"></div>
+        {{ partial "intro-text.html" . }}
+        <div class="divide80"></div>
+        {{ partial "service-box.html" . }}
+
+        <div class="divide60"></div>
+
+        {{ partial "testimonial-parallax.html" . }}
+        <div class="divide80"></div>
+        {{ partial "latest-blog.html" . }}
+
+
+        {{ partial "process.html" . }}
+        <div class="divide80"></div>
+        <div class="container">
+            <div class="row">
+                {{ partial "contact.html" . }}
+                {{ partial "about-us.html" . }}
+            </div>
+        </div><!--contact and about us end-->
+        <div class="divide60"></div>
+        {{ partial "facts.html" . }}
+
+        {{ partial "footer.html" . }}
+        {{ partial "scripts.html" . }}
+
+    </body>
+</html>

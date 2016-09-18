@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{partial "portfolio-single/head.html" . }}
+
+    <body>
+        {{ partial "topbar.html" }}
+        <!--navigation -->
+        <!-- Static navbar -->
+        {{partial "portfolio-single/header.html" . }}
+
+        {{partial "portfolio-single/heading.html" . }}<!--.bread-wrap-->
+        <div class="divide80"></div>
+        <div class="container error-page">
+            {{partial "portfolio-single/picture.html" . }}<!--possible slider in partial code-->
+
+            <div class="divide40"></div>
+            {{partial "portfolio-single/under-text.html" . }}
+
+        </div><!--error page-->
+        <div class="divide40"></div>
+        {{ partial "footer.html" . }}
+        {{partial "portfolio-single/scripts.html" . }}
+
+    </body>
+</html>

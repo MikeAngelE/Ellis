@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{partial "blog-post/head.html" . }}
+
+    <body>
+      {{ partial "topbar.html" . }}
+      
+        <!--navigation -->
+        <!-- Static navbar -->
+        {{partial "blog-post/header.html" . }}
+
+        {{partial "blog-post/heading.html" . }}<!--.bread-wrap-->
+        <div class="divide80"></div>
+        <div class="container">
+            <div class="row">   
+                <div class="col-md-9 margin30">
+                    <div class="row">                       
+                        <div class="col-md-12">                       
+                            {{partial "blog-post/post.html" . }}
+
+                            <h3>Comments</h3>
+                            <ul class="list-unstyled comments-list">
+                                {{partial "blog-post/comment.html" . }}
+
+                                
+                            </ul><!--comments list-->
+                            {{partial "blog-post/leave-comment.html" . }}
+
+                        </div>
+                    </div><!--row-->
+                </div>
+                <div class="col-md-3">
+                    {{ partial "blog/search.html" . }}
+                    {{ partial "blog/text-widget.html" . }}
+                    {{partial "blog/sidebar.html" . }}
+                
+                </div>
+            </div>
+        </div><!--blog container-->
+        <div class="divide50"></div>
+        {{ partial "footer.html" . }}
+        {{partial "blog-post/scripts.html" . }}
+
+    </body>
+</html>
